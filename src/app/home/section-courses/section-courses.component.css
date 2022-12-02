@@ -2,7 +2,7 @@
     width: 100%;
     display: block;
     /* background: url(src/assets/images/slider-bg.jpg) no-repeat; */
-    background-color: #236094;
+    background-color: #b10067;
     padding-top: 0px;
     background-attachment: fixed;
     background-size: cover;
@@ -244,7 +244,7 @@ div#button-container .btn .pillbtn {
         background: transparent;
     }
     .header-inner ul.navbar-nav .nav-item:hover .nav-link {
-        color: #236094;
+        color: #b10067;
     }
     .navbar-nav .nav-item .dropdown-menu {
         background-color: #f3f3f3;

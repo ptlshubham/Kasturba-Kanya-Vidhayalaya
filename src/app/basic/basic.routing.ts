@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { AchievementsComponent } from './achievements/achievements.component';
 import { ActivityComponent } from './activity/activity.component';
 import { ContactComponent } from './contact/contact.component';
 import { HistoryComponent } from './history/history.component';
@@ -14,6 +15,10 @@ export const BasicRoutes: Routes = [{
     {
         path: 'activity',
         component: ActivityComponent
+    },
+    {
+        path: 'achievements',
+        component: AchievementsComponent
     },
     {
         path: 'contact',
