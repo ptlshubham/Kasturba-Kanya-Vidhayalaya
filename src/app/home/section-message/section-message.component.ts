@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-section-message',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SectionMessageComponent implements OnInit {
 
-  constructor() { }
+  choice: any;
+  showDiv: any;
+  constructor(
+    private router:Router,
+    private activatedRoute: ActivatedRoute
+  ) { 
+    this.choice = localStorage.getItem('choice');
+  
+  }
 
   ngOnInit(): void {
+    this.activatedRoute.params.subscribe(params => {
+      this.showDiv = params['id'];
+    });
   }
 
 }

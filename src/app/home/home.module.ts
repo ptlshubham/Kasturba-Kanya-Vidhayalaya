@@ -11,6 +11,7 @@ import { SectionMessageComponent } from './section-message/section-message.compo
 import { RightImageTextComponent } from './right-image-text/right-image-text.component';
 import { SectionCoursesComponent } from './section-courses/section-courses.component';
 import { StatisticsIncrementorComponent } from './statistics-incrementor/statistics-incrementor.component';
+import { IndexComponent } from './index/index.component';
 
 
 
@@ -22,7 +23,8 @@ import { StatisticsIncrementorComponent } from './statistics-incrementor/statist
     SectionMessageComponent,
     RightImageTextComponent,
     SectionCoursesComponent,
-    StatisticsIncrementorComponent
+    StatisticsIncrementorComponent,
+    IndexComponent
   ],
   imports: [
     CommonModule,

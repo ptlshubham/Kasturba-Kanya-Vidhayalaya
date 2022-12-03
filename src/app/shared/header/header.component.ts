@@ -1,5 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -11,17 +11,24 @@ export class HeaderComponent implements OnInit {
   isSticky: boolean = false;
   public collapsed = true;
   readMore=false;
-  
+  choice:any;
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
     this.isSticky = window.pageYOffset >= 250;
   }
-
+  showDiv: any;
   constructor(
-    private router:Router
-  ) { }
+    private router:Router,
+    private activatedRoute: ActivatedRoute
+  ) { 
+    this.choice = localStorage.getItem('choice');
+  
+  }
 
   ngOnInit(): void {
+    this.activatedRoute.params.subscribe(params => {
+      this.showDiv = params['id'];
+    });
   }
   
   moreOpen(){
