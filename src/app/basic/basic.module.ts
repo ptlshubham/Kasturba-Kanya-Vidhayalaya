@@ -10,6 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { StructureComponent } from './structure/structure.component';
 import { HistoryComponent } from './history/history.component';
 import { AchievementsComponent } from './achievements/achievements.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -27,6 +28,8 @@ import { AchievementsComponent } from './achievements/achievements.component';
     SharedModule,
     RouterModule.forChild(BasicRoutes),
     NgbModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class BasicModule { }

@@ -3,6 +3,7 @@ import { AchievementsComponent } from './achievements/achievements.component';
 import { ActivityComponent } from './activity/activity.component';
 import { ContactComponent } from './contact/contact.component';
 import { HistoryComponent } from './history/history.component';
+import { InfrastructureComponent } from './infrastructure/infrastructure.component';
 import { StructureComponent } from './structure/structure.component';
 
 export const BasicRoutes: Routes = [{
@@ -28,5 +29,9 @@ export const BasicRoutes: Routes = [{
         path: 'structure',
         component: StructureComponent
     },
+    {
+        path:'infrastructure',
+        component:InfrastructureComponent
+    }
     ]
 }];

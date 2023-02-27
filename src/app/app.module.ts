@@ -6,6 +6,9 @@ import { AppRoutes } from './app.routing';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     }),
     CarouselModule,
     BrowserAnimationsModule,
+    HttpClientModule,
+    NgxPaginationModule,
+    ToastrModule.forRoot(),
      
   ],
   providers: [],

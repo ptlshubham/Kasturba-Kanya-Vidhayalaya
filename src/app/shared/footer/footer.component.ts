@@ -7,7 +7,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-choice: any;
+  choice: any;
   showDiv: any;
   constructor(
     private router:Router,
