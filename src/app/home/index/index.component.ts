@@ -30,7 +30,7 @@ export class IndexComponent implements OnInit {
   getInstituteDetails() {
     this.choice = localStorage.getItem('choice');
     if (this.choice == 'primary') {
-      this.staticURL = 'www.kkvprimary.ac.in';
+      this.staticURL = 'www.kkv.ac.in';
       this.homeService.getInstituteDetailsById(this.staticURL).subscribe((res: any) => {
         localStorage.setItem('InstituteId', res[0].id);
         localStorage.setItem('InstituteName', res[0].name);
@@ -40,7 +40,7 @@ export class IndexComponent implements OnInit {
       })
     }
     else if (this.choice == 'secondary') {
-      this.staticURL = 'www.kkvsecondary.ac.in';
+      this.staticURL = 'www.kkv.ac.in';
       this.homeService.getInstituteDetailsById(this.staticURL).subscribe((res: any) => {
         localStorage.setItem('InstituteId', res[0].id);
         localStorage.setItem('InstituteName', res[0].name);
