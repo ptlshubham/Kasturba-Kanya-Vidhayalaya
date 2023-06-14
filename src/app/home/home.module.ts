@@ -1,19 +1,18 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { MainComponent } from './main/main.component';
-import { HomeRoutes } from './home.routing';
-import { RouterModule } from '@angular/router';
-import { HomeSliderComponent } from './home-slider/home-slider.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { SharedModule } from '../shared/shared.module';
-import { LeftImageTextComponent } from './left-image-text/left-image-text.component';
-import { SectionMessageComponent } from './section-message/section-message.component';
-import { RightImageTextComponent } from './right-image-text/right-image-text.component';
-import { SectionCoursesComponent } from './section-courses/section-courses.component';
-import { StatisticsIncrementorComponent } from './statistics-incrementor/statistics-incrementor.component';
-import { IndexComponent } from './index/index.component';
-
-
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { MainComponent } from "./main/main.component";
+import { HomeRoutes } from "./home.routing";
+import { RouterModule } from "@angular/router";
+import { HomeSliderComponent } from "./home-slider/home-slider.component";
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { SharedModule } from "../shared/shared.module";
+import { LeftImageTextComponent } from "./left-image-text/left-image-text.component";
+import { SectionMessageComponent } from "./section-message/section-message.component";
+import { RightImageTextComponent } from "./right-image-text/right-image-text.component";
+import { SectionCoursesComponent } from "./section-courses/section-courses.component";
+import { StatisticsIncrementorComponent } from "./statistics-incrementor/statistics-incrementor.component";
+import { IndexComponent } from "./index/index.component";
+import { QuickConnectComponent } from "./quick-connect/quick-connect.component";
 
 @NgModule({
   declarations: [
@@ -24,7 +23,8 @@ import { IndexComponent } from './index/index.component';
     RightImageTextComponent,
     SectionCoursesComponent,
     StatisticsIncrementorComponent,
-    IndexComponent
+    IndexComponent,
+    QuickConnectComponent,
   ],
   imports: [
     CommonModule,
@@ -32,8 +32,6 @@ import { IndexComponent } from './index/index.component';
     RouterModule.forChild(HomeRoutes),
     NgbModule,
   ],
-  exports: [
-    HomeSliderComponent,
-  ]
+  exports: [HomeSliderComponent],
 })
-export class HomeModule { }
+export class HomeModule {}

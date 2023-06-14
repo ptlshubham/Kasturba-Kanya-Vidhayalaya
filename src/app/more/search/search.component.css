@@ -1,19 +1,20 @@
 h4 {
-    font-size: 16px;
+  font-size: 16px;
 }
 .rs-degree.style1 .degree-wrap .content-part {
-    background: #b10067;
-    padding: 35px 35px 0;
+  background: #b10067;
+  padding: 10px 10px 0;
 }
-a:active, a:hover {
-    color: #ffffff;
+a:active,
+a:hover {
+  color: #ffffff;
 }
 a {
-    color: #ffffff;
+  color: #ffffff;
 }
 .rs-degree.style1 .degree-wrap .content-part .title {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 .rs-degree.style1 .degree-wrap .content-part .desc {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
